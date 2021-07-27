@@ -10,9 +10,7 @@
       </div>
     </div>
     <div class="menu_projects">
-      <h3>🚧 Menu still under construction 🚧</h3>
-      <!--<ProjectBand v-for="projet in full_projets" v-bind:content="projet"></ProjectBand>-->
-      <div class="it_rain"></div>
+      <ProjectBand v-for="projet in full_projets" v-bind:content="projet"></ProjectBand>
     </div>
     <Footer></Footer>
   </div>
