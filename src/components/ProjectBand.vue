@@ -2,19 +2,6 @@
   <div class="projects">
     <router-link :to="content.coolname" style="text-decoration: none;" :class="content.coolname">
     <div class="name"><h2>{{ content.beautifulname }}</h2></div>
-
-      <!--
-    <a :class="content.coolname">
-      Go to the project : {{content.beautifulname}}
-      <div class="bande">
-        <div>{{ content.beautifulname }}<img :src="content.smiley"></div>
-        <div>{{ content.beautifulname }}<img :src="content.smiley"></div>
-        <div>{{ content.beautifulname }}<img :src="content.smiley"></div>
-        <div>{{ content.beautifulname }}<img :src="content.smiley"></div>
-        <div>{{ content.beautifulname }}<img :src="content.smiley"></div>
-      </div>
-    </a>
-    -->
     <div class="content">
       <span>Go to the project</span>
       <img class="marquee__img" :src="content.smiley">
@@ -98,7 +85,7 @@ h2 {
   align-items: center;
   display: flex;
   position: relative;
-  animation: marquee 15s linear infinite,enter 2s;
+  animation: marquee 15s linear infinite;
   will-change: transform;
   opacity: 0;
   z-index: 1000;
@@ -138,12 +125,6 @@ h2 {
 @keyframes rotation {
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes enter {
-  100% {
-    opacity: 1;
   }
 }
 
@@ -204,5 +185,12 @@ h2 {
 #text {
   display: block;
   margin: auto 0;
+}
+
+@media (max-width: 450px) {
+
+  h2 {
+    font-size: 16px;
+  }
 }
 </style>
