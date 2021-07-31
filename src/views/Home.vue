@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div class="me">
+      <GitHub></GitHub>
       <div>
         <h1 class="h1_rhr animate__animated animate__slideInLeft"> Rémi Hay--Rimbault</h1>
       </div>
@@ -19,13 +20,14 @@
 <script>
 // @ is an alias to /src
 
+import GitHub from './GitHub';
 import ProjectBand from "@/components/ProjectBand";
 import Footer from '@/components/Footer.vue';
-import $ from 'jquery';
 
 export default {
   name: 'Home',
   components: {
+    GitHub,
     ProjectBand,
     Footer
   },

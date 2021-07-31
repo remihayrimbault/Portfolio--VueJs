@@ -1,5 +1,6 @@
 <template>
   <div class="legal_notice">
+    <GitHub></GitHub>
     <h2>Legal Notice</h2>
     <div class="legal_content">
       <p><strong>Owner &amp; declaring body</strong></p>
@@ -18,11 +19,13 @@
 </template>
 
 <script>
+import GitHub from './GitHub';
 import Footer from "@/components/Footer";
 
 export default {
   name: 'LegalNotice',
   components: {
+    GitHub,
     Footer
   }
 }
